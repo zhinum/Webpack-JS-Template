@@ -1,0 +1,24 @@
+{
+  "name": "resturant-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --config webpack.dev.js --open",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": [],
+  "author": "Prince Onah <princeonah@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.6",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  }
+}
