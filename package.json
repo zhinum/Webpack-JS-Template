@@ -1,9 +1,10 @@
 {
-  "name": "resturant-page",
+  "name": "template",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
     "build": "webpack --config webpack.prod.js",
     "predeploy": "npm run build",
     "dev": "webpack serve --config webpack.dev.js --open",
@@ -22,6 +23,7 @@
     "globals": "^17.5.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
+    "jest": "^30.4.2",
     "style-loader": "^4.0.0",
     "webpack": "^5.105.4",
     "webpack-cli": "^7.0.2",
