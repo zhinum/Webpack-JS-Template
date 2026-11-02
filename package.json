@@ -1,9 +1,10 @@
 {
   "name": "template",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "test:watch": "jest --watchAll",
     "build": "webpack --config webpack.prod.js",
     "predeploy": "npm run build",
